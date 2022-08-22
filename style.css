@@ -119,7 +119,7 @@ p {
     width: 350px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1920px) {
   body {
     background-position: top -1100px left -900px, bottom -1100px right -900px;
   }
