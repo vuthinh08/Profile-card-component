@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: #19a2ae;
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--dark-cyan);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: top 200% left 120%, bottom 200% right 120%;
+  background-repeat: no-repeat, no-repeat;
+}
+span {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+p {
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.card {
+  width: 325px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: url(./images/bg-pattern-card.svg) no-repeat top;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease 0s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-head {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+.card-head img {
+  border-radius: 100rem;
+  border: 4px solid #fff;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #d9dbe3;
+}
+.card-info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--very-dark-desaturated-blue);
+}
+.card-info h2:hover {
+  color: var(--dark-cyan);
+}
+.card-info h2 span {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  margin-left: 6px;
+}
+.card-info p {
+  margin-bottom: 30px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 30px 0;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position: top -500px left -600px, bottom -500px right -600px
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-position: top 600% left -50%, bottom 600% right -50%;
+  }
+  .card {
+    width: 350px;
+  }
+}
