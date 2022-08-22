@@ -28,6 +28,7 @@ body {
     url(./images/bg-pattern-bottom.svg);
   background-position: top 200% left 120%, bottom 200% right 120%;
   background-repeat: no-repeat, no-repeat;
+  background-size: cover;
 }
 span {
   color: var(--very-dark-desaturated-blue);
@@ -110,12 +111,17 @@ p {
   }
 }
 
-
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   body {
-    background-position: top 600% left -50%, bottom 600% right -50%;
+    background-position: top -900px left -600px, bottom -900px right -600px;
   }
   .card {
     width: 350px;
   }
 }
+@media screen and (min-width: 1440px) {
+  body {
+    background-position: top -1100px left -900px, bottom -1100px right -900px;
+  }
+}
+
